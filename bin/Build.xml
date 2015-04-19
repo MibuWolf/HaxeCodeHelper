@@ -1,0 +1,107 @@
+<xml>
+<set name="HXCPP_API_LEVEL" value="311" />
+<files id="haxe">
+<compilerflag value="-Iinclude"/>
+  <file name="src/sys/io/FileOutput.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/io/FileOutput.h"/>
+  </file>
+  <file name="src/sys/io/File.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/io/File.h"/>
+   <depend name="include/sys/io/FileOutput.h"/>
+  </file>
+  <file name="src/sys/FileSystem.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Path.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+   <depend name="include/sys/_FileSystem/FileKind.h"/>
+  </file>
+  <file name="src/sys/_FileSystem/FileKind.cpp">
+   <depend name="include/sys/_FileSystem/FileKind.h"/>
+  </file>
+  <file name="src/logs/LogManager.cpp">
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/logs/LogLevel.h"/>
+   <depend name="include/logs/LogManager.h"/>
+   <depend name="include/sys/io/File.h"/>
+   <depend name="include/sys/io/FileOutput.h"/>
+  </file>
+  <file name="src/logs/LogLevel.cpp">
+   <depend name="include/logs/LogLevel.h"/>
+  </file>
+  <file name="src/haxe/io/Path.cpp">
+   <depend name="include/haxe/io/Path.h"/>
+  </file>
+  <file name="src/haxe/io/Error.cpp">
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/haxe/io/Eof.cpp">
+   <depend name="include/haxe/io/Eof.h"/>
+  </file>
+  <file name="src/haxe/io/Output.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/io/Bytes.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/config/ConfigManager.cpp">
+   <depend name="include/config/ConfigManager.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/logs/LogLevel.h"/>
+   <depend name="include/logs/LogManager.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+   <depend name="include/sys/io/File.h"/>
+  </file>
+  <file name="src/codeanalysis/CodeAnalysisManager.cpp">
+   <depend name="include/codeanalysis/CodeAnalysisManager.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/haxe/io/Path.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+   <depend name="include/sys/io/File.h"/>
+   <depend name="include/sys/io/FileOutput.h"/>
+  </file>
+  <file name="src/Std.cpp">
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/Main.cpp">
+   <depend name="include/Main.h"/>
+   <depend name="include/codeanalysis/CodeAnalysisManager.h"/>
+   <depend name="include/config/ConfigManager.h"/>
+   <depend name="include/logs/LogLevel.h"/>
+   <depend name="include/logs/LogManager.h"/>
+  </file>
+  <file name="src/cpp/Lib.cpp">
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/__boot__.cpp">
+  </file>
+  <file name="src/__files__.cpp">
+  </file>
+  <file name="src/__resources__.cpp">
+  </file>
+</files>
+<files id="__lib__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__lib__.cpp">
+   <depend name="include/Main.h"/>
+  </file>
+</files>
+<files id="__main__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__main__.cpp">
+   <depend name="include/Main.h"/>
+  </file>
+</files>
+<set name="HAXE_OUTPUT" value="Main" />
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+</xml>

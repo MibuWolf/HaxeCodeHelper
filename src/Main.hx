@@ -1,4 +1,5 @@
 package ;
+import codeanalysis.CodeAnalysisManager;
 import config.ConfigManager;
 import cpp.Lib;
 import haxe.io.Bytes;
@@ -26,10 +27,13 @@ class Main
 		if ( !bSuc )
 		{
 			LogManager.getInstance().Trace( LogLevel.LogType_Error, "未找到代码路径配置，请创建config.ini，并将所需检测的代码根路径配于改文件内！" );
-		}
-
 		
-		LogManager.getInstance().Close();
+			LogManager.getInstance().Close();
+			
+			return;
+		}
+		
+		CodeAnalysisManager.getInstance().Analysis( ConfigManager.getInstance().getCodePath() );
 	}
 	
 }
